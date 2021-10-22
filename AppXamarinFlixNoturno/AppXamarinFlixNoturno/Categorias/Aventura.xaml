@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppXamarinFlixNoturno.Categorias.Aventura">
+             x:Class="AppXamarinFlixNoturno.Categorias.Aventura"
+             Title="Aventura">    
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+            <Image x:Name="logotipo" />
+
+            <ScrollView>
+                <Grid RowDefinitions="300, 300, 300" 
+                      ColumnDefinitions="*, *"
+                      Padding="5">
+                    <ImageButton Grid.Column="0" Grid.Row="0" x:Name="btnCapitaMarvel" Clicked="btnCapitaMarvel_Clicked" />
+                    <ImageButton Grid.Column="1" Grid.Row="0" x:Name="btnPanteraNegra" />
+                    <ImageButton Grid.Column="0" Grid.Row="1" x:Name="btnShazan" />
+                    <ImageButton Grid.Column="1" Grid.Row="1" x:Name="btnAladdin" />
+                    <ImageButton Grid.Column="0" Grid.Row="2" x:Name="btnDumbo" />
+                    <ImageButton Grid.Column="1" Grid.Row="2" x:Name="btnVef" />
+                </Grid>    
+            </ScrollView>
+            
+        </StackLayout>       
+        
     </ContentPage.Content>
 </ContentPage>

@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using AppXamarinFlixNoturno.Categorias;
+
 namespace AppXamarinFlixNoturno
 {
     public partial class MainPage : ContentPage
@@ -19,7 +21,7 @@ namespace AppXamarinFlixNoturno
         {
             try
             {
-                Navigation.PushAsync(new Categorias.Aventura());
+                Navigation.PushAsync(new Aventura());
 
             } catch(Exception ex)
             {

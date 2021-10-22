@@ -1,12 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppXamarinFlixNoturno.Filmes.CapitanMarvel">
+             x:Class="AppXamarinFlixNoturno.Filmes.CapitanMarvel"
+             Title="Capitã Marvel">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+            <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/_q3SH0dr17k" />
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                    <Image Grid.Column="0" Grid.Row="0" x:Name="poster" 
+                           HeightRequest="300" BackgroundColor="Aqua" />
+                    <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="CadetBlue">
+                        <Label Text="Capitã Marvel" />
+                        <Label Text="Data de Lançamento" />
+                        <Label Text="7 de março de 2019" />
+                        <Label Text="Direção" />
+                        <Label Text="Anna Boden, Ryan Fleck" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                                 BackgroundColor="Aquamarine">
+                        <Label Text="Sinpose" />
+                        <Label Text="textão" x:Name="sinopse" />
+                    </StackLayout>
+                </Grid>       
+            </ScrollView>
+        </Grid>    
     </ContentPage.Content>
+    
 </ContentPage>
