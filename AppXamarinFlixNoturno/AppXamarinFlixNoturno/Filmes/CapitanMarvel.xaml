@@ -15,11 +15,11 @@
                     <Image Grid.Column="0" Grid.Row="0" x:Name="poster" 
                            HeightRequest="300" BackgroundColor="Aqua" />
                     <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="CadetBlue">
-                        <Label Text="Capitã Marvel" />
-                        <Label Text="Data de Lançamento" />
-                        <Label Text="7 de março de 2019" />
-                        <Label Text="Direção" />
-                        <Label Text="Anna Boden, Ryan Fleck" />
+                        <Label Text="Capitã Marvel" Style="{StaticResource titulo}" />
+                        <Label Text="Data de Lançamento" Style="{StaticResource titulo}" />
+                        <Label Text="7 de março de 2019" Style="{StaticResource textoTitulo}" />
+                        <Label Text="Direção" Style="{StaticResource titulo}" />
+                        <Label Text="Anna Boden, Ryan Fleck" Style="{StaticResource textoTitulo}" />
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
                                  BackgroundColor="Aquamarine">
