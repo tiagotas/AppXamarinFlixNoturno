@@ -15,6 +15,8 @@ namespace AppXamarinFlixNoturno
         public MainPage()
         {
             InitializeComponent();
+            
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void Button_Clicked(object sender, EventArgs e)

@@ -16,6 +16,8 @@ namespace AppXamarinFlixNoturno.Categorias
         {
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             logotipo.Source = ImageSource.FromResource("AppXamarinFlixNoturno.Img.xamarin.png");
 
             btnCapitaMarvel.Source = ImageSource.FromResource("AppXamarinFlixNoturno.Posters.capitamarvel.jpg");
